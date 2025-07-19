@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+            <title class=>Document</title>
+            <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+
+    <body>
+        <header class="flex justify-between items-center p-4 bg-pink-200">
+            <div class="h-20 w-20 bg-pink-200 rounded-full bg-[url('https://attic.sh/ubz3szuciyiuwzqn2546b2j8j4rn')] bg-cover bg-center"></div>
+            <nav class="flex gap-4">
+                <a class="border font-bold border-2 rounded-[12px] py-[4px] px-[8px] border-pink-400 text-pink-400" href="#">♥ Home ♥</a>
+                <a class="border font-bold border-2 rounded-[12px] py-[4px] px-[8px] border-pink-400 text-pink-400" href="#">♥ About Me ♥</a>
+                <a class="border font-bold border-2 rounded-[12px] py-[4px] px-[8px] border-pink-400 text-pink-400" href="#">♥ Reach Out! ♥</a>
+            </nav>
+        </header>
+        
+        <!-- Main Content -->
+        <main>
+            <!-- Home Content -->
+            <section id="home-page">
+                <header class="bg-[url('https://e0.pxfuel.com/wallpapers/360/1006/desktop-wallpaper-the-powerpuff-girls-heart-background-novocom-top.jpg')] bg-cover bg-center text-center py-16">
+                    <!-- <img src="https://e0.pxfuel.com/wallpapers/360/1006/desktop-wallpaper-the-powerpuff-girls-heart-background-novocom-top.jpg" class="mx-auto w-full rounded-[12px]" /> -->
+                    <h1 class="text-4xl font-bold text-center text-white" id="welcomeMessage" link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">♥ Welcome, <span id="welcome-user">[User]</span>! ♥</h1>
+                </header>
+                <article>
+                    <p class="text-center mt-2"><br>Take the time to explore my page!</p>
+                </article>
+                </section>
+
+            <!-- About Me Content -->
+            <section id="about-me">
+                <header>
+                <h2 class="text-2xl font-semibold text-center my-4 text-pink-400"><br>Hi! I'm Rizka ♥</h2><br>
+            </header>
+
+            <article>
+                <p class="text-center">I am a Computer Science graduate passionate in data analysis and data science who likes to dabble in a little bit of everything!</p> <br>
+                <p class="text-center">I love to learn new things and diversify my skillset. Despite my field of expertise, I have experiences in graphic design, illustration, and even English teaching! Not only that, I love exploring the possibilities of integrating technology into my interest, such as beauty and fashion!</p> <br>
+                <p class="text-center">You can find my conference paper for the 2024 11th International Conference on Electrical Engineering, Computer Science and Informatics (EECSI) <a href="https://ieeexplore.ieee.org/document/10776291" class="text-pink-500 underline hover:text-pink-700 transition duration-200">here!</a></p> <br>
+            </article>
+            </section>
+
+            <!-- Reach Out Content -->
+            <section id="reach-out">
+                <header>
+                <h2 class="text-2xl font-semibold text-center my-4 text-pink-400"><br>Let's Connect!</h2>
+            </header>
+
+            <div class="flex gap-8 p-4">
+            <!-- Form -->
+            <form id="userForm" class="flex flex-col items-start justify-center p-4 w-1/2">
+                <label for="name-input" class="mb-2">Name:</label>
+                <input type="text" id="name-input" name="name" class="border rounded p-2 mb-4 w-full">
+
+                <label for="email-input" class="mb-2">Email:</label>
+                <input type="email" id="email-input" name="email" class="border rounded p-2 mb-4 w-full">
+
+                <label for="birthdate-input" class="mb-2">Date of Birth:</label>
+                <input type="date" id="birthdate-input" name="birthdate" class="border rounded p-2 mb-4 w-full">
+
+                <label class="mb-2">Gender:</label>
+                <div class="flex gap-4 mb-4">
+                <label class="flex items-center gap-1">
+                    <input type="radio" name="gender" value="male" class="accent-pink-400">Male
+                </label>
+                <label class="flex items-center gap-1">
+                    <input type="radio" name="gender" value="female" class="accent-pink-400">Female
+                </label>
+                </div>
+
+                <label for="text-input" class="mb-2">Message:</label>
+                <textarea id="text-input" name="message" class="border rounded p-2 mb-4 w-full" rows="4"></textarea>
+
+                <button onclick="displayResults()" type="button"
+                class="bg-pink-400 text-white py-2 px-4 rounded hover:bg-pink-600 transition duration-300">Submit</button>
+            </form>
+
+            <!-- Results -->
+            <div id="resultDisplay" class="w-1/2 p-4 border rounded bg-pink-50 text-pink-700 hidden">
+                <h2 class="text-xl font-bold mb-4">Your Submission</h2>
+                <p><strong>Name:</strong> <span id="result-name"></span></p>
+                <p><strong>Email:</strong> <span id="result-email"></span></p>
+                <p><strong>Date of Birth:</strong> <span id="result-birthdate"></span></p>
+                <p><strong>Gender:</strong> <span id="result-gender"></span></p>
+                <p><strong>Message:</strong> <span id="result-message"></span></p>
+            </div>
+            </section>
+
+        </main>
+        <br>
+        <footer>
+            <p class="flex justify-between items-center p-4 bg-pink-200"> © 2025 Rizka Vanissa Alifia | Made with ♥</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
